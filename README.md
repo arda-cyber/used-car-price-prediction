@@ -12,6 +12,7 @@ This project uses the **Vehicle Dataset from CarDekho** ([Kaggle](https://www.ka
 ---
 
 ## 1. Motivation
+This project represents a personal milestone for me: it is my second machine learning project overall, and the first one not tied to a textbook or guided structure — I worked through real, messy data on my own terms, making each decision myself along the way, with Claude as a partner to talk through decisions, check my reasoning, and help write the code.
 
 This project applies an end-to-end supervised learning workflow (stratified splitting, EDA discipline, pipeline-based preprocessing, cross-validation, hyperparameter tuning) to a real-world, messy dataset. The dataset offers genuine challenges: a skewed target, inconsistent units across technical spec columns, high-cardinality categoricals, and string fields requiring careful parsing — making it a good testbed for demonstrating disciplined data science practice end to end.
 
