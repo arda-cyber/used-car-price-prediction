@@ -170,8 +170,8 @@ plt.title('Distribution of Log-Transformed Selling Price')
 plt.show()
 ```
 
-![Selling price distribution](images/selling_price_dist.png)
-![Log-transformed selling price distribution](images/selling_price_log_dist.png)
+![Selling price distribution](selling_price_dist.png)
+![Log-transformed selling price distribution](selling_price_log_dist.png)
 
 `log1p(selling_price)` was used as the modeling target throughout the rest of the project.
 
