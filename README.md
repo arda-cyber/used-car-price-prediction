@@ -650,4 +650,4 @@ This project applied a disciplined, leakage-safe ML workflow (stratified splitti
 
 ---
 
-*Prepared as a portfolio project — Arda, Université de Strasbourg*
+*Prepared as a Machine Learning Project from a self_learned amateur student*
