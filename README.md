@@ -236,7 +236,7 @@ plt.title('Correlation Matrix')
 plt.show()
 ```
 
-![Core correlation matrix](images/correlation_matrix_core.png)
+![Core correlation matrix](correlation_matrix_core.png)
 
 `car_age` showed a strong negative correlation with log price (-0.71); `km_driven` was moderately correlated with `car_age` (0.49), foreshadowing the multicollinearity discussion in §14.
 
@@ -264,8 +264,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Selling price by brand](images/price_by_brand_boxplot.png)
-![Selling price by fuel, transmission, and owner](images/price_by_categorical.png)
+![Selling price by brand](price_by_brand_boxplot.png)
+![Selling price by fuel, transmission, and owner](price_by_categorical.png)
 
 Two notable EDA findings shaped later decisions:
 - **Brand showed a strong visual price gradient** (BMW/Lexus/Land Rover at the top, Ambassador/Daewoo/Opel at the bottom) — this motivated the brand segmentation in §15, though it was later found to be largely a confounding effect (§19).
@@ -363,7 +363,7 @@ plt.title('Correlation Matrix (Extended)')
 plt.show()
 ```
 
-![Extended correlation matrix](images/correlation_matrix_extended.png)
+![Extended correlation matrix](correlation_matrix_extended.png)
 
 `engine_numeric`, `max_power_numeric`, and `torque_nm` showed strong pairwise correlation (0.70–0.84) — expected, since these are mechanically related. This multicollinearity was tolerated rather than resolved by dropping features, since the planned model (Random Forest) is robust to it; see §17 for the comparison against Linear Regression, which is more sensitive to this issue.
 
@@ -532,7 +532,7 @@ importance_df
 
 **Key finding:** three numeric engineering features (`max_power`, `car_age`, `torque_nm`) account for ~92% of predictive power. `brand_segment` — despite showing a visually striking price gradient in the EDA boxplot (§10) — contributed under 0.7% combined. This suggests brand's apparent EDA relationship with price was largely a **confounding effect**: premium brands correlate with higher power and newer age, but brand itself carries little independent signal once those are accounted for.
 
-![Torque vs selling price, colored by brand](images/torque_vs_price_by_brand.png)
+![Torque vs selling price, colored by brand](torque_vs_price_by_brand.png)
 
 This was validated by inspecting a torque-vs-price scatter colored by brand: at any fixed torque value, prices span a wide range across different brand colors — consistent with brand not being an independent driver once torque (and the other numeric features) are already known.
 
