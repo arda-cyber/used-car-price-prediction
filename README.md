@@ -663,6 +663,4 @@ This is roughly 12–15% above typical real-world market listings for this confi
 
 This project applied a disciplined, leakage-safe ML workflow (stratified splitting, EDA restricted to the training set, pipeline-based preprocessing, cross-validated model comparison, hyperparameter tuning) to a messy, real-world dataset requiring substantial feature engineering (unit normalization, string parsing, data-entry error detection, cardinality reduction). The tuned Random Forest achieved R² = 0.94 on held-out test data with no evidence of overfitting. The most valuable methodological takeaway was empirical: an EDA-driven hypothesis (brand as a key price driver) was tested and largely refuted once feature importance was measured on the tuned model — a concrete illustration of correlation vs. confounding, and of why EDA conclusions should be revisited once real model diagnostics are available.
 
----
 
-Arda Ayhan
